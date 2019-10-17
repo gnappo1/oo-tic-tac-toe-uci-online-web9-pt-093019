@@ -82,7 +82,7 @@ class TicTacToe
   
   def play 
     puts "Welcome to Tic Tac Toe!"
-    until over? == true
+    until over?
       turn
     end
     return "congrats" if won?
