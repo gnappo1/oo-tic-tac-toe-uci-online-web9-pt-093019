@@ -79,4 +79,8 @@ class TicTacToe
     return @board[won?[0]] if won?
     nil
   end
+  
+  def play 
+    
+  end
 end
