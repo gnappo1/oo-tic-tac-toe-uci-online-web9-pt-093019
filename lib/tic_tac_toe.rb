@@ -61,5 +61,9 @@ class TicTacToe
     
   def won?
     WIN_COMBINATIONS.find {|combo| @board[combo[0]] == @board[combo[1]] && @board[combo[0]] == @board[combo[2]] && @board[combo[0]] != " " }
-  end 
+  end
+  
+  def full?
+    @board.select {|square| square != " "}.count == 9
+  end
 end
