@@ -81,9 +81,9 @@ class TicTacToe
   end
   
   def play 
-    while !over?
+    until over?
       turn
     end
-    winner ? "Congratulations #{winner}" : "Cats game!"
+    puts won? ? "Congratulations #{winner}" : "Cats game!"
   end
 end
