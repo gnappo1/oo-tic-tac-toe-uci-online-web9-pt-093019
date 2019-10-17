@@ -85,7 +85,7 @@ class TicTacToe
     until over?
       turn
     end
-    return "congrats" if won?
-    return "drwa" if draw?
+    return "Congratulations #{won?[0]}" if won?
+    return "Cats game!" if draw?
   end
 end
