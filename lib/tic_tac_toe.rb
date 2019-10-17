@@ -81,6 +81,11 @@ class TicTacToe
   end
   
   def play 
-    
+    puts "Welcome to Tic Tac Toe!"
+    while won? || draw?
+      turn
+    end
+    return "congrats" if won?
+    return "drwa" if draw?
   end
 end
