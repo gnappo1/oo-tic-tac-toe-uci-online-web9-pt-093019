@@ -66,4 +66,8 @@ class TicTacToe
   def full?
     @board.select {|square| square != " "}.count == 9
   end
+  
+  def draw?
+    full? && !won?
+  end
 end
