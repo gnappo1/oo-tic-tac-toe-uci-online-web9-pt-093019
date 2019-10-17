@@ -83,7 +83,7 @@ class TicTacToe
   def play 
     puts "Welcome to Tic Tac Toe!"
     turn
-    while won? || draw?
+    while over?
       turn
     end
     return "congrats" if won?
