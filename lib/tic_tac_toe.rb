@@ -57,11 +57,9 @@ class TicTacToe
       puts "Wrong input! Whether the position is already occupied or the input is not between 1 and 9"
       turn
     end
+  end
     
-    def won?
-      WIN_COMBINATIONS.select do |combo|
-        @board[combo[0]] == @board[combo[1]] && @board[combo[0]] == @board[combo[2]] && @board[combo[0]] != " "
-      end
-    end
+  def won?
+    WIN_COMBINATIONS.find {|combo| @board[combo[0]] == @board[combo[1]] && @board[combo[0]] == @board[combo[2]] && @board[combo[0]] != " " }
   end 
 end
